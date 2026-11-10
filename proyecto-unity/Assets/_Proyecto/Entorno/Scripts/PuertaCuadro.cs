@@ -1,17 +1,26 @@
+using System;
 using UnityEngine;
 
 public class PuertaCuadro : MonoBehaviour
 {
+    [SerializeField] private float openAngle = 100f;
+    [SerializeField] private bool isOpen = false;
+    private Quaternion closedRotation;
+    private Quaternion openRotation;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        transform.localRotation = Quaternion.Euler(0f, 100f, 0f);
+        closedRotation = transform.localRotation;
+        openRotation = closedRotation * Quaternion.Euler(0f, 100f, 0f);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        transform.localRotation = isOpen ? openRotation : closedRotation;
+    }
+
+    public void changeState()
+    {
+        isOpen = !isOpen;
     }
 }
