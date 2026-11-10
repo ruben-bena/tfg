@@ -21,7 +21,7 @@ public class PuertaCuadro : MonoBehaviour
         transform.localRotation = Quaternion.Slerp(transform.localRotation, target, speedAnimation * Time.deltaTime);
     }
 
-    public void changeState()
+    public void ChangeState()
     {
         isOpen = !isOpen;
     }
