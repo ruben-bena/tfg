@@ -7,6 +7,7 @@ public class PuertaCuadro : MonoBehaviour
     [SerializeField] private bool isOpen = false;
     private Quaternion closedRotation;
     private Quaternion openRotation;
+    private float speed = 5f;
 
     void Start()
     {
@@ -16,7 +17,8 @@ public class PuertaCuadro : MonoBehaviour
 
     void Update()
     {
-        transform.localRotation = isOpen ? openRotation : closedRotation;
+        Quaternion target = isOpen ? openRotation : closedRotation;
+        transform.localRotation = Quaternion.Slerp(transform.localRotation, target, speed * Time.deltaTime);
     }
 
     public void changeState()
