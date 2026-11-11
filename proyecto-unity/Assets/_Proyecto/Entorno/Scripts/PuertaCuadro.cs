@@ -12,7 +12,7 @@ public class PuertaCuadro : MonoBehaviour
     void Start()
     {
         closedRotation = transform.localRotation;
-        openRotation = closedRotation * Quaternion.Euler(0f, 100f, 0f);
+        openRotation = closedRotation * Quaternion.Euler(0f, openAngle, 0f);
     }
 
     void Update()
