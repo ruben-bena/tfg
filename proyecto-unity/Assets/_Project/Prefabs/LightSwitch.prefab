@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1960686355288134685}
   - component: {fileID: 8547619516876878032}
   m_Layer: 0
-  m_Name: Interruptor
+  m_Name: LightSwitch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

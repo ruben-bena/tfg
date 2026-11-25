@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class PuertaCuadro : MonoBehaviour
+public class PanelDoor : MonoBehaviour
 {
     [SerializeField] private float openAngle = 100f;
     [SerializeField] private bool isOpen = false;

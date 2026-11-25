@@ -3,7 +3,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
-public class Magnetotermico : MonoBehaviour
+public class ShowInfoOnGrab : MonoBehaviour
 {
     [SerializeField] private GameObject panel;
     private XRGrabInteractable grab;
