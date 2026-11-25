@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BreakerData
   type: 0
   shortName: ICP
-  fullName: ICP 25 A
-  description: ICP 25 A
+  fullName: Interruptor de Control de Potencia
+  description: "Limita la potencia a la contratada con la compa\xF1\xEDa el\xE9ctrica
+    y se desconecta si el consumo la supera. Pertenece a la compa\xF1\xEDa distribuidora
+    y no debe manipularse."
   ratedCurrent: 25

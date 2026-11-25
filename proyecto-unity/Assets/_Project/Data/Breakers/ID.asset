@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8774b0f682162a306924861af1ca0261, type: 3}
-  m_Name: Differential
+  m_Name: ID
   m_EditorClassIdentifier: Assembly-CSharp::BreakerData
   type: 2
-  shortName: Diff
-  fullName: Differential 40 A
-  description: Differential 40 A
+  shortName: ID
+  fullName: Diferencial
+  description: "Protege a las personas frente a contactos el\xE9ctricos. Detecta
+    fugas de corriente a tierra y se desconecta cuando superan los 30 mA. Debe comprobarse
+    peri\xF3dicamente con el bot\xF3n de prueba (T)."
   ratedCurrent: 40

@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BreakerData
   type: 1
   shortName: IGA
-  fullName: IGA 40 A
-  description: IGA 40 A
+  fullName: "Interruptor General Autom\xE1tico"
+  description: "Es el interruptor principal de la vivienda. Protege toda la instalaci\xF3n
+    contra sobrecargas y cortocircuitos, y permite cortar el suministro de la vivienda
+    completa."
   ratedCurrent: 40
