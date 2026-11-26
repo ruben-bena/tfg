@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
@@ -26,7 +27,13 @@ public class DinRail : MonoBehaviour
         }
     }
 
-    private void OnSlotEntered(SelectEnterEventArgs args) => LogOccupancy();
+    private void OnSlotEntered(SelectEnterEventArgs args)
+    {
+        int i = Array.IndexOf(slots, args.interactorObject as XRSocketInteractor);
+        Breaker breaker = GetBreakerAt(i);
+        BreakerInserted?.Invoke(breaker, i);
+        LogOccupancy();
+    }
     private void OnSlotExited(SelectExitEventArgs args) => LogOccupancy();
 
     public Breaker GetBreakerAt(int index)
@@ -50,4 +57,6 @@ public class DinRail : MonoBehaviour
         string slotsState = string.Join(" | ", parts);
         Debug.Log($"DinRail: {slotsState}", this);
     }
+
+    public event Action<Breaker, int> BreakerInserted;
 }
