@@ -737,6 +737,8 @@ MonoBehaviour:
   data: {fileID: 0}
   labelText: {fileID: 7861052893405393580}
   infoText: {fileID: 6108379999499638656}
+  lockedLayers:
+    m_Bits: 2
 --- !u!114 &5758169154650867794
 MonoBehaviour:
   m_ObjectHideFlags: 0
