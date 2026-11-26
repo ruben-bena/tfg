@@ -729,6 +729,77 @@ Transform:
   - {fileID: 516126245}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &356821825
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3237317634680594113, guid: 7dee8bc9c642e3014a3106620a2e7a2f, type: 3}
+      propertyPath: m_Name
+      value: Breaker_ICP
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931736770263550381, guid: 7dee8bc9c642e3014a3106620a2e7a2f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931736770263550381, guid: 7dee8bc9c642e3014a3106620a2e7a2f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.703
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931736770263550381, guid: 7dee8bc9c642e3014a3106620a2e7a2f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.4999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931736770263550381, guid: 7dee8bc9c642e3014a3106620a2e7a2f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931736770263550381, guid: 7dee8bc9c642e3014a3106620a2e7a2f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931736770263550381, guid: 7dee8bc9c642e3014a3106620a2e7a2f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931736770263550381, guid: 7dee8bc9c642e3014a3106620a2e7a2f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931736770263550381, guid: 7dee8bc9c642e3014a3106620a2e7a2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931736770263550381, guid: 7dee8bc9c642e3014a3106620a2e7a2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931736770263550381, guid: 7dee8bc9c642e3014a3106620a2e7a2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6669253145080132506, guid: 7dee8bc9c642e3014a3106620a2e7a2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: 7dee8bc9c642e3014a3106620a2e7a2f, type: 3}
+--- !u!114 &356821826 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1407111085359421870, guid: 7dee8bc9c642e3014a3106620a2e7a2f, type: 3}
+  m_PrefabInstance: {fileID: 356821825}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
 --- !u!1 &435345632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,6 +1474,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 5996342652333985273, guid: ef09fc14c461e85b3af70b86e9ca5987, type: 3}
+      propertyPath: m_StartingSelectedInteractable
+      value: 
+      objectReference: {fileID: 356821826}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2169,3 +2244,4 @@ SceneRoots:
   - {fileID: 488544835}
   - {fileID: 632311779}
   - {fileID: 814311760}
+  - {fileID: 356821825}
